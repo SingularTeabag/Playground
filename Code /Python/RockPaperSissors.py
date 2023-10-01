@@ -9,4 +9,4 @@ def startAgain():
 def mainGame():
     print("Rock Paper Sissors") 
     print()
-    playerInput = input("test")
+    playerInput = input("What will you play? ")
