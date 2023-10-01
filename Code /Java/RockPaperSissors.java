@@ -18,6 +18,7 @@ class RockPaperSissors {
         }
 
         compMove =  (int)(Math.random() * 3);
-        System.out.println("compMove");
+        
+        
     }
 }
