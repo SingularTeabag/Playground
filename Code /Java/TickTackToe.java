@@ -1,5 +1,12 @@
+import java.util.Scanner;
 class TickTackToe {
     public static void main(string[] args) {
-        System.out.println("Hello World!");
+        Scanner input = new Scanner(System.in);
+        
+        int compMove = 0;
+
+        String PlayerMove;
+
+        
     }
 }
