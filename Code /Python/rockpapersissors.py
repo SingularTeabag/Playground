@@ -5,15 +5,23 @@ print()
 
 STR_TESTING = "This is a test"
 
-def startagain():
-    """This, when true, will restart the game"""
-    maingame()
+def has_number(input_string):
+    """Checks if a string has a digit in it"""
+    return any(char.isdigit() for char in input_string)
 
-def maingame():
+def start_again():
+    """This, when true, will restart the game"""
+    main_game()
+
+def main_game():
     """The main game"""
     print("Rock Paper Sissors")
     print()
-    playerinput = input("What will you play? ")
-    if isinstance(playerinput) != isinstance(STR_TESTING):
+    player_input = input('What will you play? ')
+    while not has_number(player_input):
         print("no")
+        player_input = input('What will you play? ')
 
+main_game()
+
+print("why")
