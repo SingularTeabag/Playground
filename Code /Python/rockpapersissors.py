@@ -11,11 +11,11 @@ def startagain():
 
 def maingame():
     """The main game"""
-    print("Rock Paper Sissors") 
+    print("Rock Paper Sissors")
     print()
-    playerInput = input("What will you play? ")
+    playerinput = input("What will you play? ")
 
-
-
+    if isinstance(playerinput) != isinstance(STR_TESTING):
+        print("no")
 
 maingame()
