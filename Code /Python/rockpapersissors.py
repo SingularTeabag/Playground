@@ -14,8 +14,6 @@ def maingame():
     print("Rock Paper Sissors")
     print()
     playerinput = input("What will you play? ")
-
     if isinstance(playerinput) != isinstance(STR_TESTING):
         print("no")
 
-maingame()
