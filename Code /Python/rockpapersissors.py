@@ -1,6 +1,6 @@
 """This is here so Python stops yelling at me"""
 import random
-print("Rock Paper Sissors")
+print("\nRock Paper Sissors")
 
 print()
 
@@ -13,7 +13,10 @@ def has_number(input_string):
 
 def start_again():
     """This, when true, will restart the game"""
-    main_game()
+    player_action = input('Do you want to play again? ')
+    player_action = player_action.lower()
+    if player_action == "yes" or player_action == "y":
+        main_game()
 
 def main_game():
     """The main game"""
@@ -48,11 +51,14 @@ def main_game():
             print("Computer plays sissors \nComputer Wins!")
     else:
         if comp_move == 0:
-            print("Computer plays rock \nCompou")
+            print("Computer plays rock \nComputer Wins!")
         elif comp_move == 1:
-            print()
+            print("Computer plays paper \nYou Win!")
         else:
-            print()
+            print("Computer plays sissors \nTie!")
+
+    start_again()
+
 
 
 main_game()
