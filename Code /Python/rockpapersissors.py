@@ -18,8 +18,11 @@ def main_game():
     print("Rock Paper Sissors")
     print()
     player_input = input('What will you play? ')
-    while not has_number(player_input):
-        print("no")
+    while has_number(player_input):
+        print("You must chose Rock, Paper, or, Sissors!\n")
+        player_input = input('What will you play? ')
+    while not(player_input == "rock" or player_input == "paper" or player_input == "sissors"):
+        print("You must chose Rock, Paper, or, Sissors!\n")
         player_input = input('What will you play? ')
 
 main_game()
