@@ -33,7 +33,7 @@ def main_game():
         player_input = player_input.lower()
 
     comp_move = random.randint(0,2)
-    #0 - rock 1 - paper 2 - sissors 
+    #0 - rock 1 - paper 2 - sissors
 
     if player_input == "rock":
         if comp_move == 0:
