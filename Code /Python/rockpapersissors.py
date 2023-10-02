@@ -3,6 +3,8 @@ print("Hello World")
 
 print()
 
+STR_TESTING = "This is a test"
+
 def startagain():
     """This, when true, will restart the game"""
     maingame()
@@ -12,5 +14,8 @@ def maingame():
     print("Rock Paper Sissors") 
     print()
     playerInput = input("What will you play? ")
+
+
+
 
 maingame()
